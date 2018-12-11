@@ -1,15 +1,88 @@
-// function ready(fn) {
-//   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-//     fn();
-//   } else {
-//     document.addEventListener('DOMContentLoaded', fn);
-//   }
-// }
-//
-// ready(function(){
-//   console.log('DOM ready');
-// });
-    const data ={
+import insertElements from './modules/insertElements.js';
+//import dataBooks from './modules/dataBooks.js';
+import bookCardTemplate from './modules/bookCardTemplate.js';
+
+/*function ready(fn) {
+  if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+ready(function(){
+
+  if( document.querySelector(bookCardTemplate.wrap) ) {
+    const wrap = document.querySelector(bookCardTemplate.wrap);
+*/
+  //  insertElements(dataBooks.books, bookCardTemplate);
+/*  };
+});*/
+   
+const data = {
+  page: 1,
+  perPage: 8,
+  type: ''
+}
+const tabsWrap = document.querySelector('.j-tabs');
+const tabsArray = Array.from(tabsWrap.children);
+
+/*const all = document.querySelector('#qwerty');
+all.addEventListener('click', function(e){
+  console.log('qwerty')
+});*/
+
+tabsArray.forEach(function(tab) {
+  const link = tab.firstElementChild;
+
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    data.type = event.target.dataset.type;
+
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      data.perPage = 8;
+    } else {
+      data.perPage = 3;
+    }
+
+    const dataAjax = `https://api.do-epixx.ru/htmlpro/bookstore/books/get/${data.page}/${data.perPage}/${data.type}`;
+    
+    sendRequest(dataAjax);
+//    console.log(event);
+  });
+
+});
+
+function sendRequest(data) {
+  let xhr = new XMLHttpRequest;
+
+  xhr.open('GET', data);
+
+  xhr.send();
+    
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      
+      const request = JSON.parse(xhr.responseText);
+      console.log(request);
+
+      const wrap = document.querySelector(bookCardTemplate.wrap);
+
+      if(wrap.children) {
+        wrap.innerHTML = '';
+      }
+
+      if( document.querySelector(bookCardTemplate.wrap) ) {
+
+       insertElements(request.items, bookCardTemplate);
+      };
+    } else {
+      console.log(`Жду загрузки: ${xhr.readyState}`);
+    };
+  };
+};
+
+    /*const data ={
       books: [
         {
           link: '1',
@@ -91,4 +164,4 @@
         const html =createCards(data);
         wrap.innerHTML = html;
       };
-      insertElements(data, cards);
+      insertElements(data, cards);*/

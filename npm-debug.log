@@ -1,0 +1,32 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@1.1.65
+3 info using node@v0.8.14
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\epic-book-store\start-kit-master\package.json
+6 verbose run-script [ 'prestart', 'start', 'poststart' ]
+7 info prestart EpicSkills-start-kit@1.0.0
+8 info start EpicSkills-start-kit@1.0.0
+9 verbose unsafe-perm in lifecycle true
+10 silly exec cmd "/c" "gulp"
+11 silly cmd,/c,gulp,C:\epic-book-store\start-kit-master spawning
+12 info EpicSkills-start-kit@1.0.0 Failed to exec start script
+13 error EpicSkills-start-kit@1.0.0 start: `gulp`
+13 error `cmd "/c" "gulp"` failed with 1
+14 error Failed at the EpicSkills-start-kit@1.0.0 start script.
+14 error This is most likely a problem with the EpicSkills-start-kit package,
+14 error not with npm itself.
+14 error Tell the author that this fails on your system:
+14 error     gulp
+14 error You can get their info via:
+14 error     npm owner ls EpicSkills-start-kit
+14 error There is likely additional logging output above.
+15 error System Windows_NT 6.1.7601
+16 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+17 error cwd C:\epic-book-store\start-kit-master
+18 error node -v v0.8.14
+19 error npm -v 1.1.65
+20 error code ELIFECYCLE
+21 verbose exit [ 1, true ]
