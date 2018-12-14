@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js  page">
+<head>
+  <meta charset="UTF-8">
+  <title>Циклы</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+</head>
+<body>
+  <a href="index.html">Содержание</a>
+  <h1>Функции</h1>
+
+  <script>
+      // Объявление именованной функции
+      function summ(a, b) {
+        return a + b;
+      };
+
+      const result = summ(10, 5);
+      console.log(result);
+      summ(3, 4);
+
+      // Параметры функций
+
+      // Возврат значения из функции
+
+      // Объявление безымянной функции и присвоение оной переменной
+      // возвращаем строку с html
+      const htmlSumm = function(num) {
+        const htmlString = `<p>Сумма = ${num}</p>`;
+
+        return htmlString;
+      }
+
+  </script>
+</body>
+</html>

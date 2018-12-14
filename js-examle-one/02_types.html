@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js  page">
+<head>
+  <meta charset="UTF-8">
+  <title>Типы данных</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+</head>
+<body>
+  <a href="index.html">Содержание</a>
+  <h1>Типы данных</h1>
+
+  <script>
+    // Тип "число"
+    const number = 123;
+    console.log(typeof number);
+
+    // Тип "строка" - одинарные кавычки
+    const string = '33 года';
+    console.log(typeof string);
+
+    // дввйные кавычки (экранирование)
+    const badstring = "<p class=\"text\">text</p>";
+    console.log(badstring);
+
+    // Шаблонные строки
+    const newString = `<div class="wrap">
+      <p class="text">У Вани есть 123 рубля</p>
+</div>`;
+
+    console.log(newString);
+
+
+    // Булевый тип
+    const yes = true;
+    const no = false;
+
+    console.log(typeof yes);
+
+    // Тип Null
+    const age = null;
+    console.log(typeof age);
+    // typeop null - object;
+
+    // Тип Undefined
+    let count;
+
+    console.log(typeof count);
+
+    count +=`lol`;
+    
+    console.log(typeof count);
+
+  </script>
+</body>
+</html>

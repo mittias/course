@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js  page">
+<head>
+  <meta charset="UTF-8">
+  <title>Типы данных</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+</head>
+<body>
+  <a href="index.html">Содержание</a>
+  <h1>Типы данных 2</h1>
+
+  <script>
+    // Массив
+    const array = [[1, 2, 3],[4, 5, 6]];
+    console.log(typeof array);
+    console.log(array);
+
+    // проверяем является ли объект массивом
+
+    // Объект
+    const obj = {
+      name: 'Ivan',
+      age: '20',
+      city: 'Saint-Petersburg',
+      work: true
+    }
+    console.log(typeof obj);
+
+    // Усложненный вариант объекта
+    const clubInfo = {
+      club: 'epixx',
+      members: [
+        {
+          name: 'Ivan',
+          age: 20,
+          city: 'Saint-Petersburg',
+          work: true
+        },{
+          name: 'Anna',
+          age: '25',
+          city: 'Saint-Petersburg',
+          work: false
+        },{
+          name: 'Aslan',
+          age: '34',
+          city: 'Moscow',
+          work: true
+        }
+      ]
+    };
+    console.log(clubInfo.members);
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js  page">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+</head>
+<body>
+  <style>
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .member-card {
+      flex-basis: 25%;
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, .2);
+      box-sizing: border-box;
+    }
+
+    .member__name {
+      margin-top: 0;
+    }
+  </style>
+
+  <a href="index.html">Содержание</a>
+  <h1>DOM</h1>
+  <div class="container">
+    <div class="cards j-member-cards">
+      <!-- <div class="member-card">
+        <h2 class="member__name">Иван</h2>
+        <p class="member__age">Возраст: 22</p>
+        <a href="/index.html" class="member__link">vkontakte</a>
+      </div>
+      <div class="member-card">
+        <h2 class="member__name">Арина</h2>
+        <p class="member__age">Возраст: 24</p>
+        <a href="" class="member__link">facebook</a>
+      </div>
+      <div class="member-card">
+        <h2 class="member__name">Кирилл</h2>
+        <p class="member__age">Возраст: 33</p>
+        <a href="" class="member__link">instagramm</a>
+      </div>
+      <div class="member-card">
+        <h2 class="member__name">Вика</h2>
+        <p class="member__age">Возраст: 45</p>
+        <a href="" class="member__link">vkontakte</a>
+      </div> -->
+    </div>
+  </div>
+  
+
+  <script>
+    const data ={
+      members: [
+        {
+          name: 'Иван',
+          age: '22',
+          socialLink: 'vk.com',
+          socialName: 'vkontakte'
+        },{
+          name: 'Арина',
+          age: '24',
+          socialLink: 'facebook.com',
+          socialName: 'facebook'
+        },{
+          name: 'Кирилл',
+          age: '33',
+          socialLink: 'instagramm.com',
+          socialName: 'instagramm'
+        }
+      ]
+    };
+      // query.selector('selector')
+      const cards = document.querySelector('.j-member-cards');
+      console.log(cards);
+
+      
+     /* // query.selectorAll('selector')
+      const elements = document.querySelectorAll('.member-card');*/
+
+      function createCards(data) {
+        const membersArray = data.members;
+        let cardString = ``;
+        membersArray.forEach( function(member) {
+
+          cardString += `
+            <div class="member-card">
+              <h2 class="member__name">${member.name}</h2>
+              <p class="member__age">Возраст: ${member.age}</p>
+              <a href="${member.socialLink}" class="member__link">${member.socialName}</a>
+            </div>`
+        }) ;
+
+        return cardString
+      };
+
+      function insertElements(data, wrap) {
+        const html = createCards(data);
+        wrap.innerHTML = html;
+      };
+      insertElements(data, cards);
+
+
+    /*  // Переводим коллекцию нод в массив
+      const elementsArr = Array.from(elements);
+      //const elementsArr = Array.prototype.slice.call(elements);
+      console.log(elementsArr);*/
+
+  </script>
+</body>
+</html>
