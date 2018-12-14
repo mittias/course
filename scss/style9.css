@@ -1,0 +1,50 @@
+import 'variables';
+
+@import 'blocks/page';
+@import 'blocks/page-header';
+
+
+@font-face{
+	font-family:"Montserrat";
+	src:url("../fonts/montserrat-v12-latin_cyrillic-ext-500.woff");
+	src:url("../fonts/montserrat-v12-latin_cyrillic-ext-500.woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:"Montserrat";
+	src:url("../fonts/montserrat-v12-latin_cyrillic-ext-500italic.woff");
+	src:url("../fonts/montserrat-v12-latin_cyrillic-ext-500italic.woff2");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face{
+	font-family:"Montserrat";
+	src:url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff");
+	src:url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff2");
+	font-weight: 700;
+	font-style: bold;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.page-header{
+
+
+	&__inner{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+	}
+
+}

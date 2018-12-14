@@ -26,7 +26,6 @@ const data = {
 }
 const tabsWrap = document.querySelector('.j-tabs');
 const tabsArray = Array.from(tabsWrap.children);
-
 /*const all = document.querySelector('#qwerty');
 all.addEventListener('click', function(e){
   console.log('qwerty')
@@ -38,6 +37,7 @@ tabsArray.forEach(function(tab) {
   link.addEventListener('click', function(event) {
     event.preventDefault();
     data.type = event.target.dataset.type;
+  
 
     if (window.matchMedia("(min-width: 768px)").matches) {
       data.perPage = 8;
@@ -81,6 +81,11 @@ function sendRequest(data) {
     };
   };
 };
+  $('.main-nav__toggle').on('click', function(e) {
+      $('.main-nav__list').toggleClass("main-nav__listOpen"); //you can list several class names 
+      e.preventDefault();
+    });
+
 
     /*const data ={
       books: [

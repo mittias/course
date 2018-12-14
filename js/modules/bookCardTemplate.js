@@ -8,13 +8,13 @@ const bookCardTemplate = {
 		return `
        
               <a href="${book.uri}" class="product-card-mini__img-wrap">
-                <img src="books_all/${book.uri}.png" alt="" class="product-card-mini__img">
+                <img src="img/books_all/${book.uri}.png" alt="" class="product-card-mini__img">
               </a>
               <h2 class="product-card-mini__title">
                <a href="">${book.name}</a>
               </h2>
               <p class="product-card-mini__descr">${book.desc}</p>
-              <div class="product-card-mini__price">${book.price}</div>
+              <div class="product-card-mini__price">${book.price} ₽</div>
             `
 	}
 }
