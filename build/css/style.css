@@ -255,10 +255,18 @@ body {
   .product-card-mini {
     -webkit-box-flex: 1;
         -ms-flex: 1 41%;
-            flex: 1 41%; } }
+            flex: 1 41%; }
+    .catalog .product-card-mini:nth-child(odd) {
+      margin-right: 90px; } }
 
-.catalog .product-card-mini:nth-child(odd) {
-  margin-right: 90px; }
+@media (min-width: 992px) {
+  .product-card-mini {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 17%;
+            flex: 1 17%;
+    margin-right: 40px; }
+    .catalog .product-card-mini:nth-child(odd) {
+      margin-right: 40px; } }
 
 .product-card-mini__img {
   width: 220px;

@@ -13,139 +13,139 @@ html {
   font-weight: 500; 
   font-style: normal; } 
 
-  @font-face { 
-    font-family: "Montserrat"; 
-    src: url("../fonts/montserrat-v12-latin_cyrillic-ext-500italic.woff"); 
-    src: url("../fonts/montserrat-v12-latin_cyrillic-ext-500italic.woff2"); 
-    font-weight: 500; 
-    font-style: italic; } 
+@font-face { 
+  font-family: "Montserrat"; 
+  src: url("../fonts/montserrat-v12-latin_cyrillic-ext-500italic.woff"); 
+  src: url("../fonts/montserrat-v12-latin_cyrillic-ext-500italic.woff2"); 
+  font-weight: 500; 
+  font-style: italic; } 
 
-    @font-face { 
-      font-family: "Montserrat"; 
-      src: url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff"); 
-      src: url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff2"); 
-      font-weight: 700; 
-      font-style: bold; } 
+@font-face { 
+  font-family: "Montserrat"; 
+  src: url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff"); 
+  src: url("../fonts/montserrat-v12-latin_cyrillic-ext-700.woff2"); 
+  font-weight: 700; 
+  font-style: bold; } 
 
-      @-ms-viewport { 
-        width: device-width; 
-      } 
+@-ms-viewport { 
+  width: device-width; 
+} 
 
-      ::-webkit-scrollbar { 
-        width: 0px; 
-        display: none; 
-        background: transparent; 
-      } 
+::-webkit-scrollbar { 
+  width: 0px; 
+  display: none; 
+  background: transparent; 
+} 
 
-      html { 
-        box-sizing: border-box; 
-        -ms-overflow-style: scrollbar; 
-      } 
+html { 
+  box-sizing: border-box; 
+  -ms-overflow-style: scrollbar; 
+} 
 
-      body{ 
-        display: flex; 
-        flex-direction: column; 
-        margin: 0; 
-      } 
+body{ 
+  display: flex; 
+  flex-direction: column; 
+  margin: 0; 
+} 
 
-      *, 
-      *::before, 
-      *::after { 
-        box-sizing: inherit; 
-      } 
+*, 
+*::before, 
+*::after { 
+  box-sizing: inherit; 
+} 
 
-      .page-header{ 
+.page-header{ 
 
 
-        &__inner{ 
-          display: -webkit-flex; 
-          display: -moz-flex; 
-          display: -ms-flex; 
-          display: -o-flex; 
-          display: flex; 
-          -webkit-flex-direction: row; 
-          -moz-flex-direction: row; 
-          -ms-flex-direction: row; 
-          -o-flex-direction: row; 
-          flex-direction: row; 
-          flex-wrap: wrap; 
-          align-content: space-around; 
-          padding: 20px 10px 20px 30px;
-          @media (min-width: $screen-sm){
-            flex-wrap: nowrap;
-            align-items: center;
+  &__inner{ 
+    display: -webkit-flex; 
+    display: -moz-flex; 
+    display: -ms-flex; 
+    display: -o-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    -moz-flex-direction: row; 
+    -ms-flex-direction: row; 
+    -o-flex-direction: row; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: space-around; 
+    padding: 20px 10px 20px 30px;
+    @media (min-width: $screen-sm){
+      flex-wrap: nowrap;
+      align-items: center;
 
-          }  
+    }  
 
-        } 
-        &__text{ 
-          display: none;
-          @media (min-width: $screen-sm){
-            display: block;
-            margin: 0;
-          } 
-        } 
+  } 
+  &__text{ 
+    display: none;
+    @media (min-width: $screen-sm){
+      display: block;
+      margin: 0;
+    } 
+  } 
 
-      } 
-      .main-nav{ 
-        width: 58%; 
-        display: flex; 
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        justify-content: flex-end; 
-        position: relative;
-        @media (min-width: $screen-sm){
-            flex: 5;
-            flex-wrap: nowrap;
-            align-items: baseline;
-        }
-        &__basket{
-          @media (min-width: $screen-sm){
-            order: 2;
+} 
+.main-nav{ 
+  width: 58%; 
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: flex-end; 
+  position: relative;
+  @media (min-width: $screen-sm){
+      flex: 5;
+      flex-wrap: nowrap;
+      align-items: baseline;
+  }
+  &__basket{
+    @media (min-width: $screen-sm){
+      order: 2;
 
-          }
+    }
 
-        }
+  }
 
-        &__toggle{ 
-          margin: 0 20px 0 0;
-          @media (min-width: $screen-sm){
-            display: none;
-          }
-        } 
+  &__toggle{ 
+    margin: 0 20px 0 0;
+    @media (min-width: $screen-sm){
+      display: none;
+    }
+  } 
 
-        &__list{ 
-          display: none;
-          width: 100%; 
-          list-style-type: none;
-          @media (min-width: $screen-sm){
-            display: flex;
-            margin: 0;
-            justify-content: flex-end;
-          } 
+  &__list{ 
+    display: none;
+    width: 100%; 
+    list-style-type: none;
+    @media (min-width: $screen-sm){
+      display: flex;
+      margin: 0;
+      justify-content: flex-end;
+    } 
 
-        } 
-        &__listOpen{ 
-          display: block; 
-          padding: 20px 0 0 50px; 
-          background-color:rgba(220,191,206,0.9); 
-          position: absolute; 
-        }
-        &__item{  
-          padding-bottom: 20px;
-          @media (min-width: $screen-sm){
-            padding: 0 20px 0 0;
+  } 
+  &__listOpen{ 
+    display: block; 
+    padding: 20px 0 0 50px; 
+    background-color:rgba(220,191,206,0.9); 
+    position: absolute; 
+  }
+  &__item{  
+    padding-bottom: 20px;
+    @media (min-width: $screen-sm){
+      padding: 0 20px 0 0;
 
-          }
-        } 
-        &__item &__link{ 
-          font-weight: bold; 
-          text-decoration: none; 
-          font-size: 14px; 
-          color: #000; 
+    }
+  } 
+  &__item &__link{ 
+    font-weight: bold; 
+    text-decoration: none; 
+    font-size: 14px; 
+    color: #000; 
 
-        } 
-      } 
+  } 
+} 
 
 .logo{ 
   width: 42%; 
@@ -190,7 +190,8 @@ html {
   } 
 } 
 
-.catalog{ 
+.catalog{
+
   &__tabs-wrap{ 
     background: #E8E8E8; 
   } 
@@ -240,11 +241,18 @@ html {
   } 
 } 
 .product-card-mini{
-   @media (min-width: $screen-sm){
-     flex: 1 41%;
-   }
-  .catalog &:nth-child(odd){
-    margin-right: 90px;
+  @media (min-width: $screen-sm){
+    flex: 1 41%;
+    .catalog &:nth-child(odd){
+      margin-right: 90px; 
+    }  
+  }
+   @media (min-width: $screen-md){
+     flex: 1 17%;
+     .catalog &:nth-child(odd){
+      margin-right: 40px; 
+    }  
+     margin-right: 40px;  
   }
   &__img{ 
     width: 220px; 
