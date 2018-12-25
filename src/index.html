@@ -1,91 +1,86 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js  page">
+<html class="no-js page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Документ</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
-
+  <script src="js/svg4everybody.min.js">
+  </script>
+  <script>
+  svg4everybody()
+  </script>
 </head>
-<body><script id="__bs_script__">//<![CDATA[
-document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
-//]]></script>
-
-
-<header class="page-header">
-  <div class="page-header__inner">
-
-
-    <a href="#" class="logo">book store</a>
-    <p class="page-header__text">с 9:00 до 19:00</p>
-
-    <nav class="main-nav">
-      <a href="#" class="main-nav__basket">b</a>
-      <button class="main-nav__toggle"></button>
-
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">книги</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">рекомендации</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">контакты</a>
-        </li>
-        <li class="main-nav__item call-mobile">
-          <a href="tel:88005553535" class="main-nav__link">картиночка 88005553535</a>
-        </li>
-      </ul>
-      <a href="tel:88005553535" class="main-nav__link call">с</a>
-    </nav>
-
-  </div>
-</header>
-
-<div class="promo">
-  <div class="promo__inner">
-    <div class="slider">
-      <div class="slider__inner">
-        <article class="slider__item">
-          <p class="slider__item-descr">Новое поступление книги...</p>
-          <h2 class="slider__item-title">Название книги</h2>
-          <a href=""><img src="" alt="" class="slider__item-img"></a>
-        </article>
+<body>
+  <script id="__bs_script__">
+  //<![CDATA[
+  document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+  //]]>
+  </script>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="page-header__wrapper">
+        <a class="logo" href="#">book store</a>
+        <p class="page-header__text">с 9:00 до 19:00</p>
+      </div>
+      <nav class="main-nav">
+        <a class="main-nav__basket" href="#">b</a> <button class="main-nav__toggle"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">книги</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">рекомендации</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">контакты</a>
+          </li>
+          <li class="main-nav__item call-mobile">
+            <a class="main-nav__link" href="tel:88005553535">картиночка 88005553535</a>
+          </li>
+        </ul><a class="main-nav__link call" href="tel:88005553535">с</a>
+      </nav>
+    </div>
+  </header>
+  <div class="promo">
+    <div class="promo__inner">
+      <div class="slider">
+        <div class="slider__inner">
+          <article class="slider__item">
+            <p class="slider__item-descr">Новое поступление книги...</p>
+            <h2 class="slider__item-title">Название книги</h2><a href=""><img alt="" class="slider__item-img" src=""></a>
+          </article>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<section class="catalog">
-  <div class="catalog__tabs-wrap">
-    <ul class="catalog__tabs j-tabs">
-      <li class="catalog__tab-item">
-        <a href="#" data-type=""  class="catalog__tab-link" id="qwerty">Все</a>
-      </li>
-      <li class="catalog__tab-item">
-        <a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
-      </li>
-      <li class="catalog__tab-item">
-        <a href="#" data-type="science" class="catalog__tab-link">Научпоп</a>
-      </li>
-      <li class="catalog__tab-item">
-        <a href="#" data-type="business" class="catalog__tab-link">Бизнес</a>
-      </li>
-      <li class="catalog__tab-item">
-        <a href="#" data-type="creativity" class="catalog__tab-link">Творчество</a>
-      </li>
-    </ul>
-  </div>
-  <div class="catalog__list-wrap">
-    <div class="catalog__list">
-
+  <section class="catalog">
+    <div class="catalog__tabs-wrap">
+      <ul class="catalog__tabs j-tabs">
+        <li class="catalog__tab-item">
+          <a class="catalog__tab-link" data-type="" href="#" id="qwerty">Все</a>
+        </li>
+        <li class="catalog__tab-item">
+          <a class="catalog__tab-link" data-type="marketing" href="#">Маркетинг</a>
+        </li>
+        <li class="catalog__tab-item">
+          <a class="catalog__tab-link" data-type="science" href="#">Научпоп</a>
+        </li>
+        <li class="catalog__tab-item">
+          <a class="catalog__tab-link" data-type="business" href="#">Бизнес</a>
+        </li>
+        <li class="catalog__tab-item">
+          <a class="catalog__tab-link" data-type="creativity" href="#">Творчество</a>
+        </li>
+      </ul>
     </div>
+    <div class="catalog__list-wrap">
+      <div class="catalog__list">
+      </div>
     </div>
-
     <nav class="pages-nav">
       <ul class="pages-nav__list">
         <li class="pages-nav__list-item">
@@ -110,113 +105,92 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3
           <a href="">10</a>
         </li>
       </ul>
-
     </nav>
-
-
   </section>
-
   <div class="delivery-info">
     <h2 class="delivery-info__title">Доставим в любое место</h2>
     <p class="delivery-info__text">// ну почти любое</p>
-
-
+    <div class="delivery-info__inner">
       <div class="delivery-info__item">
-        <svg class="delivery-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.5 40"><defs><style>.cls-1{fill:#d7569c;}</style></defs><title>icon_book</title><g id="Layer_2" data-name="Layer 2"><g id="delivery"><g id="book_icon"><path class="cls-1" d="M37.5,3a15.75,15.75,0,0,0-12,2S21.12,1.94,14,3.5C4.56,5.57,0,.5,0,.5v36s5.1,3.57,14,1A12.75,12.75,0,0,1,25.5,40h0s5.35-4.92,12-3c8.9,2.57,14-1,14-1V0S46.94,5.07,37.5,3Zm-13,33.25A12.57,12.57,0,0,0,14,34.5c-8.9,2.57-12,0-12,0L2.5,5S4.56,8.57,14,6.5a16.22,16.22,0,0,1,10.5,1ZM49.5,34s-3.1,2.57-12,0c-4.94-1.42-9.15.92-11,2.22V7.4A16.16,16.16,0,0,1,37.5,6c9.44,2.07,12-2,12-2Zm-33-13h-6a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm27-6h-12a1,1,0,0,0,0,2h12a1,1,0,0,0,0-2Zm-37,1a1,1,0,0,0,1,1h12a1,1,0,0,0,0-2H7.5A1,1,0,0,0,6.5,16Zm34,5h-6a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"/></g></g></g></svg>
-        <p class="delivery-info__descr">Покупаете книги...</p>
+        <svg class="delivery-info__svg" height="48" width="48">
+        <use xlink:href="img/sprite.svg#icon_book"></use></svg>
+        <p class="delivery-info__descr">Покупаете книги на сайте в<br>
+        любом формате - бумажные, электронные или аудио.</p>
       </div>
-
       <div class="delivery-info__item">
-        <svg class="delivery-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 38"><defs><style>.cls-1{fill:#d7569c;}</style></defs><title>icon_delivery</title><g id="Layer_2" data-name="Layer 2"><g id="delivery"><g id="icon_delivery"><path class="cls-1" d="M67,15A10,10,0,0,0,57,5H50V0H16V8H7l.14,2H18V2H48V28H18V20H8l-.4-4h25l-2.42,2.41a1,1,0,0,0,1.42,1.42l3.74-3.75a1,1,0,0,0,.5-.25A1,1,0,0,0,36.1,15a.93.93,0,0,0-.77-1.08l-3.74-3.75a1,1,0,0,0-1.42,1.42L32.59,14H1a1,1,0,0,0,0,2H7.57L8,22h8v8h8a5,5,0,1,0,8,0H54a5,5,0,1,0,8,0h5ZM28,36a3,3,0,1,1,3-3A3,3,0,0,1,28,36Zm30,0a3,3,0,1,1,3-3A3,3,0,0,1,58,36Zm7-8H50V7h7c4,0,8,4,8,8Z"/></g></g></g></svg>
-        <p class="delivery-info__descr">Мы подарим..</p>
+        <svg class="delivery-info__svg" height="48" width="48">
+        <use xlink:href="img/sprite.svg#icon_delivery"></use></svg>
+        <p class="delivery-info__descr">Мы подарим вам «Набор<br>
+        читателя» и добавим в посылку.</p>
       </div>
-
       <div class="delivery-info__item">
-        <svg class="delivery-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 42"><defs><style>.cls-1{fill:#d7569c;}</style></defs><title>icon_box</title><g id="Layer_2" data-name="Layer 2"><g id="delivery"><g id="icon_box"><path class="cls-1" d="M55,0H2A2,2,0,0,0,0,2v8a2,2,0,0,0,2,2H3V40a2,2,0,0,0,2,2H51a2,2,0,0,0,2-2V12h2a2,2,0,0,0,2-2V2A2,2,0,0,0,55,0ZM35,2V25s-6-4.12-6-4-8,5-8,5V11h0V2ZM55,8v2H51V40H5V10H2V2H19v8H9a1,1,0,0,0,0,2H19V29s10-4.92,10-5,8,5,8,5V12H47a1,1,0,0,0,0-2H37V2H55Z"/></g></g></g></svg>
-        <p class="delivery-info__descr">Бесплатно доставляем..</p>
+        <svg class="delivery-info__svg" height="48" width="48">
+        <use xlink:href="img/sprite.svg#icon_box"></use></svg>
+        <p class="delivery-info__descr">Бесплатно доставляем заказы от<br>
+        3 000 по всей России.</p>
       </div>
-
       <div class="delivery-info__item">
-        <svg class="delivery-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 47"><defs><style>.cls-1{fill:#d7569c;}</style></defs><title>icon_map</title><g id="Layer_2" data-name="Layer 2"><g id="delivery"><g id="icon_map"><path class="cls-1" d="M43,2a6.88,6.88,0,0,1,7,6.73c0,.79-.48,3.93-6.41,12.12C40.37,17.13,36,11.25,36,8.73A6.88,6.88,0,0,1,43,2m.25,11.09a4,4,0,1,0-4-4,4,4,0,0,0,4,4M12,16A10,10,0,0,1,22,26c0,1.5-.92,6.19-9.17,17.8C8.89,39.17,2,30.06,2,26A10,10,0,0,1,12,16m0,17a7,7,0,1,0-7-7,7,7,0,0,0,7,7M43,0a8.87,8.87,0,0,0-9,8.73C34,13.54,43.74,24,43.75,24h0c0-.09,8.25-10.45,8.25-15.27A8.87,8.87,0,0,0,43,0Zm.25,11.09a2,2,0,1,1,2-2,2,2,0,0,1-2,2ZM12,14A12,12,0,0,0,0,26c0,6.62,13,21,13,21h0c0-.12,11-14.37,11-21A12,12,0,0,0,12,14Zm0,17a5,5,0,1,1,5-5,5,5,0,0,1-5,5Zm27.89-4c-.63,0-3.81.15-7.89,3a19.91,19.91,0,0,0-7,9L40,27Z"/></g></g></g></svg>
-        <p class="delivery-info__descr">Доставка в более чем..</p>
+        <svg class="delivery-info__svg" height="48" width="48">
+        <use xlink:href="img/sprite.svg#icon_map"></use></svg>
+        <p class="delivery-info__descr">Доставка в более чем 300 городов России, по Москве и<br>
+        Санкт-Петербургу - бесплатно.</p>
       </div>
-
-
+    </div>
   </div>
-
   <div class="catalog-new">
-    <h2 class="catalog-new__title">Наши новинки</h2>
-    <a href="" class="catalog-new__all">Все новинки</a>
-    <div class="catalog-new__list">
-
-     <article class="product-card-mini">
-      <a href="" class="product-card-mini__img-wrap">
-        <img src="/img/books_all/45-tatuirovok-prodavana.png" alt="" class="product-card-mini__img">
-      </a>
-      <h2 class="product-card-mini__title">
-        <a href="">Название книги</a>
-      </h2>
-      <p class="product-card-mini__descr">Описание</p>
-    </article>
-
-    <article class="product-card-mini">
-      <a href="" class="product-card-mini__img-wrap">
-        <img src="/img/books_all/45-tatuirovok-prodavana.png" alt="" class="product-card-mini__img">
-      </a>
-      <h2 class="product-card-mini__title">
-        <a href="">Название книги</a>
-      </h2>
-      <p class="product-card-mini__descr">Описание</p>
-    </article>
-
-    <article class="product-card-mini">
-      <a href="" class="product-card-mini__img-wrap">
-        <img src="/img/books_all/45-tatuirovok-prodavana.png" alt="" class="product-card-mini__img" newes>
-      </a>
-      <h2 class="product-card-mini__title">
-        <a href="">Название книги</a>
-      </h2>
-      <p class="product-card-mini__descr">Описание</p>
-    </article>
-
-    <article class="product-card-mini">
-      <a href="" class="product-card-mini__img-wrap">
-        <img src="/img/books_all/45-tatuirovok-prodavana.png" alt="" class="product-card-mini__img">
-      </a>
-      <h2 class="product-card-mini__title">
-        <a href="">Название книги</a>
-      </h2>
-      <p class="product-card-mini__descr">Описание</p>
-    </article>
+    <div class="catalog-new__inner">
+      <h2 class="catalog-new__title">Наши новинки</h2><a class="catalog-new__all" href="">Все новинки</a>
+      <div class="catalog-new__list">
+        <article class="product-card-mini">
+          <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/45-tatuirovok-prodavana.png"></a>
+          <h2 class="product-card-mini__title"><a href="">Название книги</a></h2>
+          <p class="product-card-mini__descr">Описание</p>
+        </article>
+        <article class="product-card-mini">
+          <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/45-tatuirovok-prodavana.png"></a>
+          <h2 class="product-card-mini__title"><a href="">Название книги</a></h2>
+          <p class="product-card-mini__descr">Описание</p>
+        </article>
+        <article class="product-card-mini">
+          <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/45-tatuirovok-prodavana.png"></a>
+          <h2 class="product-card-mini__title"><a href="">Название книги</a></h2>
+          <p class="product-card-mini__descr">Описание</p>
+        </article>
+        <article class="product-card-mini">
+          <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/45-tatuirovok-prodavana.png"></a>
+          <h2 class="product-card-mini__title"><a href="">Название книги</a></h2>
+          <p class="product-card-mini__descr">Описание</p>
+        </article>
+      </div>
+    </div>
   </div>
-</div>
-
-<footer class="page-footer">
-  <div class="page-footer__inner">
-  <div class="page-footer__item">
-    <a href="#" class="logo">book store</a>
-    <nav class="foot-nav">
-      <ul class="foot-nav__list">
-
-       <li class="foot-nav__item">
-          <a href="" class="foot-nav__link">Книги</a>
-        </li>
-        <li class="foot-nav__item">
-          <a href="" class="foot-nav__link">Рекомендации</a>
-        </li>
-        <li class="foot-nav__item show">
-          <a href="" class="foot-nav__link" >контакты</a>
-        </li>
-      </ul>
-    </nav>
-</div>
-    <p class="page-footer__text">с 9:00 до 19:00</p>
-
-  </div>
-</footer>
-<script type="module" src="js/script.js"></script>
-<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-<link rel="stylesheet" href="../">
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__item">
+        <div class="page-footer__wrapper">
+          <a class="logo" href="#">book store</a>
+          <p class="page-footer__text">с 9:00 до 19:00</p>
+        </div>
+        <nav class="foot-nav">
+          <ul class="foot-nav__list">
+            <li class="foot-nav__item">
+              <a class="foot-nav__link" href="">книги</a>
+            </li>
+            <li class="foot-nav__item">
+              <a class="foot-nav__link" href="">рекомендации</a>
+            </li>
+            <li class="foot-nav__item show">
+              <a class="foot-nav__link" href="">контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js" type="module">
+  </script> 
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+  <link href="../" rel="stylesheet">
 </body>
-
 </html>

@@ -1,7 +1,6 @@
 import insertElements from './modules/insertElements.js';
 //import dataBooks from './modules/dataBooks.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
-
 /*function ready(fn) {
   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
     fn();
@@ -18,7 +17,7 @@ ready(function(){
   //  insertElements(dataBooks.books, bookCardTemplate);
 /*  };
 });*/
-   
+
 const data = {
   page: 1,
   perPage: 8,
@@ -37,7 +36,7 @@ tabsArray.forEach(function(tab) {
   link.addEventListener('click', function(event) {
     event.preventDefault();
     data.type = event.target.dataset.type;
-  
+
 
     if (window.matchMedia("(min-width: 768px)").matches) {
       data.perPage = 8;
@@ -46,7 +45,7 @@ tabsArray.forEach(function(tab) {
     }
 
     const dataAjax = `https://api.do-epixx.ru/htmlpro/bookstore/books/get/${data.page}/${data.perPage}/${data.type}`;
-    
+
     sendRequest(dataAjax);
 //    console.log(event);
   });
@@ -59,10 +58,10 @@ function sendRequest(data) {
   xhr.open('GET', data);
 
   xhr.send();
-    
+
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      
+
       const request = JSON.parse(xhr.responseText);
       console.log(request);
 
@@ -82,7 +81,7 @@ function sendRequest(data) {
   };
 };
   $('.main-nav__toggle').on('click', function(e) {
-      $('.main-nav__list').toggleClass("main-nav__listOpen"); //you can list several class names 
+      $('.main-nav__list').toggleClass("main-nav__listOpen"); //you can list several class names
       e.preventDefault();
     });
 
