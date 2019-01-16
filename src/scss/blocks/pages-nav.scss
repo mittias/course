@@ -1,0 +1,29 @@
+.pages-nav {
+  &__list {
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-left: 70px;
+    @media (min-width: $screen-sm) {
+      width: 72%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    @media (min-width: $screen-md) {
+      width: $screen-md;
+    }
+    @media (min-width: $screen-lg) {
+      width: $screen-lg;
+    }
+  }
+  &__list-item a {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    padding-right: 20px;
+  }
+}

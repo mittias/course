@@ -1,0 +1,68 @@
+.main-nav {
+  width: 52%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  @media (min-width: $screen-sm) {
+    flex: 5;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  &__basket {
+    @media (min-width: $screen-sm) {
+      order: 2;
+    }
+  }
+  &__toggle {
+    margin: 0 20px 0 0;
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
+  }
+  &__list {
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    @media (min-width: $screen-sm) {
+      display: flex;
+      margin: 0;
+      justify-content: flex-end;
+    }
+  }
+  &__listOpen {
+    display: block;
+    padding: 20px 0 0 50px;
+    background-color: rgba(220, 191, 206, 0.9);
+    position: absolute;
+  }
+  &__item {
+    padding-bottom: 20px;
+    @media (min-width: $screen-sm) {
+      padding: 0 20px 0 0;
+    }
+  }
+  &__item &__link {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+  }
+}
+.main-nav__list .call-mobile {
+  @media (min-width: $screen-sm) {
+    display: none;
+    padding: 0;
+  }
+}
+.call-mobile .main-nav__link {
+  color: #1a1ff7;
+}
+.main-nav .call {
+  display: none;
+  @media (min-width: $screen-sm) {
+    order: 3;
+    display: block;
+  }
+}

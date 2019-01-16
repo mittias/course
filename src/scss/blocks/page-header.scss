@@ -1,2 +1,42 @@
 .page-header {
-  display:block;}
+  &__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 20px 10px 20px 30px;
+    @media (min-width: $screen-sm) {
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    @media (min-width: $screen-md) {
+      width: $screen-md;
+      margin: 0 auto;
+    }
+    @media (min-width: $screen-lg) {
+      width: $screen-lg;
+    }
+  }
+  &__wrapper {
+    @media (min-width: $screen-sm) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__text {
+    display: none;
+    @media (min-width: $screen-sm) {
+      display: flex;
+      align-self: flex-end;
+      margin: 0 0 0 30px;
+    }
+  }
+}
