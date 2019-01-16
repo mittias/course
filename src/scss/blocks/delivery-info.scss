@@ -1,0 +1,79 @@
+.delivery-info {
+  margin: 70px 10px 0;
+  position: relative;
+  border: 7px #E7E7E7 solid;
+  @media (min-width: $screen-md) {
+    width: $screen-md;
+    margin: 170px auto 0 auto;
+  }
+  @media (min-width: $screen-lg) {
+    width: $screen-lg;
+  }
+  &__title {
+    margin: 50px 0 40px 15px;
+    width: 60%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  &__text {
+    margin: 0 15px 55px;
+    font-size: 16px
+  }
+  &__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+      flex-wrap: wrap
+    }
+  }
+  &__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $screen-sm) {
+      flex: 1 41%;
+    }
+    @media (min-width: $screen-md) {
+      flex: 1 25%;
+    }
+  }
+  &__svg {
+    width: 25%;
+  }
+  &__descr {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 40px 0 55px;
+    @media (min-width: $screen-sm) {
+      width: 65%;
+    }
+  }
+}
+.delivery-info:before {
+  content: "";
+  position: absolute;
+  left: 12%;
+  top: -10px;
+  height: 14px;
+  width: 150px;
+  background: #fff;
+}
+.delivery-info:after {
+  content: "";
+  position: absolute;
+  right: 19%;
+  bottom: -10px;
+  height: 14px;
+  width: 110px;
+  background: #fff;
+}

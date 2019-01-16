@@ -6,6 +6,10 @@
 @import 'blocks/catalog';
 @import 'blocks/product-card-mini';
 @import 'blocks/pages-nav';
+@import 'blocks/delivery-info';
+
+
+
 
 
 //next file
@@ -14,85 +18,7 @@
 
 
 
-.delivery-info {
-  margin: 70px 10px 0;
-  position: relative;
-  border: 7px #E7E7E7 solid;
-  @media (min-width: $screen-md) {
-    width: $screen-md;
-    margin: 170px auto 0 auto;
-  }
-  @media (min-width: $screen-lg) {
-    width: $screen-lg;
-  }
-  &__title {
-    margin: 50px 0 40px 15px;
-    width: 60%;
-    font-size: 30px;
-    line-height: 40px;
-  }
-  &__text {
-    margin: 0 15px 55px;
-    font-size: 16px
-  }
-  &__inner {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    @media (min-width: $screen-sm) {
-      flex-direction: row;
-      flex-wrap: wrap
-    }
-  }
-  &__item {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (min-width: $screen-sm) {
-      flex: 1 41%;
-    }
-    @media (min-width: $screen-md) {
-      flex: 1 25%;
-    }
-  }
-  &__svg {
-    width: 25%;
-  }
-  &__descr {
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 40px 0 55px;
-    @media (min-width: $screen-sm) {
-      width: 65%;
-    }
-  }
-}
-.delivery-info:before {
-  content: "";
-  position: absolute;
-  left: 12%;
-  top: -10px;
-  height: 14px;
-  width: 150px;
-  background: #fff;
-}
-.delivery-info:after {
-  content: "";
-  position: absolute;
-  right: 19%;
-  bottom: -10px;
-  height: 14px;
-  width: 110px;
-  background: #fff;
-}
+
 .catalog-new {
   padding: 110px 0 85px 0;
   background: url("../img/pink-bg.jpg");
@@ -220,91 +146,91 @@ footer .show {
 
 
 .slider {
-	position: relative;
-	overflow: hidden;
-	margin: 20px auto 0 auto;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	@media(min-width: $screen-sm){
-	}
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  @media(min-width: $screen-sm){
+  }
 
-	&__list {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
+  &__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-	&__item {
-		position: relative;
-		float: left;
-		margin: 0;
-		padding: 0;
-		width: 320px;
-		text-align: left;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		@media (min-width: $screen-sm) {
-			width: $screen-sm;
-		}
-		@media (min-width: $screen-lg) {
-		justify-content: space-around;
-		width: $screen-lg;
+  &__item {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    text-align: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    @media (min-width: $screen-sm) {
+      width: $screen-sm;
+    }
+    @media (min-width: $screen-lg) {
+    justify-content: space-around;
+    width: $screen-lg;
 
-	}
-	}
-	&__item-title{
-		font-size: 24px;
-		line-height: 30px;
-		margin-top: 60px;
-		@media (min-width: $screen-sm) {
-		font-size: 40px;
-		line-height: 50px;
-	}
-	}
-	&__item-descr {
+  }
+  }
+  &__item-title{
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 60px;
+    @media (min-width: $screen-sm) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  }
+  &__item-descr {
     font-style: italic;
     font-size: 16px;
     line-height: 24px;
     @media (min-width: $screen-sm) {
-    	width: 55%;
+      width: 55%;
     }
   }
 
   &__link{
-  	text-decoration: none;
+    text-decoration: none;
   }
   &__item-img{
-  	display: none;
-  			@media (min-width: $screen-lg) {
-	display: block;
+    display: none;
+        @media (min-width: $screen-lg) {
+  display: block;
 
-	}
   }
-	&__inner{
-		padding: 0 20px;
-		margin-bottom: 160px;
-		position: relative;
-		z-index: 2;
-		@media (min-width: $screen-sm) {
-		width: 75%;
-		margin: 0 auto 100px auto;
+  }
+  &__inner{
+    padding: 0 20px;
+    margin-bottom: 160px;
+    position: relative;
+    z-index: 2;
+    @media (min-width: $screen-sm) {
+      width: 75%;
+      margin: 0 auto 100px auto;
 
-	}
-	@media (min-width: $screen-lg) {
-		width: 50%;
-		margin: 0;
-	}
-}
-	&__border{
-		position: absolute;
+    }
+    @media (min-width: $screen-lg) {
+      width: 50%;
+      margin: 0;
+    }
+  }
+  &__border{
+    position: absolute;
     width: 95%;
     height: 55%;
     border: 8px solid #E8E8E8;
@@ -326,47 +252,47 @@ footer .show {
     left: 6%;
     margin: 0;
     }
-	}
+  }
 
-	&__control {
-		position: absolute;
-		bottom: 8%;
-		z-index: 999;
-		width: 50px;
-		height: 50px;
-		background: #F4D3E4;
-		color: #fff;
-		text-decoration: none;
-		font-weight: 600;
-		font-size: 18px;
-		opacity: 0.8;
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		    @media (min-width: $screen-sm) {
-		    	bottom: 40%;
-		    }
-	}
+  &__control {
+    position: absolute;
+    bottom: 8%;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    background: #F4D3E4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        @media (min-width: $screen-sm) {
+          bottom: 40%;
+        }
+  }
 
-	&__control:hover {
-		opacity: 1;
-		-webkit-transition: all 0.2s ease;
-	}
+  &__control:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
 }
 .control-prev {
-	border-radius: 50%;
-	left: 25%;
-	@media (min-width: $screen-sm) {
-	left: 0;
-	}
+  border-radius: 50%;
+  left: 25%;
+  @media (min-width: $screen-sm) {
+  left: 0;
+  }
 }
 
 .control-next {
-	right: 25%;
-	border-radius: 50%;
-		@media (min-width: $screen-sm) {
-	right: 0;
-	}
+  right: 25%;
+  border-radius: 50%;
+    @media (min-width: $screen-sm) {
+  right: 0;
+  }
 }
 
