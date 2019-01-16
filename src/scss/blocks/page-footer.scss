@@ -1,0 +1,42 @@
+.page-footer {
+  &__inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    flex-direction: column;
+    @media (min-width: $screen-md) {
+      width: $screen-md;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    @media (min-width: $screen-lg) {
+      width: $screen-lg;
+    }
+  }
+  &__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  &__wrapper {
+    @media (min-width: $screen-sm) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__text {
+    margin: 10px 0 0;
+    @media (min-width: $screen-sm) {
+      margin: 0 0 0 30px;
+    }
+  }
+}
+footer .logo {
+  flex: 10;
+}

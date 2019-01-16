@@ -1,0 +1,50 @@
+.catalog-new {
+  padding: 110px 0 85px 0;
+  background: url("../img/pink-bg.jpg");
+  background-size: 100% 55%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  &__inner {
+    @media (min-width: $screen-md) {
+      width: $screen-md;
+      margin: 0 auto;
+    }
+    @media (min-width: $screen-lg) {
+      width: $screen-lg;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    padding-left: 25px;
+  }
+  &__all {
+    font-size: 16px;
+    padding: 40px 0 40px 25px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    text-decoration: none;
+  }
+  &__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    overflow-y: scroll;
+  }
+  & .product-card-mini {
+    padding: 0 15px 0 25px;
+    @media (min-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+  & .product-card-mini__img {
+    @media (min-width: $screen-sm) {
+      width: 260px;
+    }
+  }
+}
