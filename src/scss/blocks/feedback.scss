@@ -14,7 +14,6 @@
   &__form {
     border: 0;
     padding-left: 30px;
-    display: flex;
   }
 
 
@@ -29,7 +28,7 @@
       width: 49%;
     }
     @media (min-width: $screen-md) {
-      width: 30%;
+      margin-right: 1px;
     }
 
 
@@ -37,8 +36,7 @@
   &__checkbox {
     padding: 40px 0;
     @media (min-width: $screen-md) {
-
-
+      margin-right: 50px;
     }
   }
   &__link {
@@ -48,8 +46,7 @@
   &__form .btn {
     margin: 35px 0 135px;
     @media (min-width: $screen-md) {
-
-
+      margin-left: 70px;
     }
   }
 

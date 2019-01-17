@@ -6,8 +6,8 @@ const bookCardTemplate = {
 	tagClass: 'product-card-mini',
 	setContent: function(book) {
 		return `
-       
-              <a href="${book.uri}" class="product-card-mini__img-wrap">
+
+              <a href="single-product.html" class="product-card-mini__img-wrap">
                 <img src="img/books_all/${book.uri}.png" alt="" class="product-card-mini__img">
               </a>
               <h2 class="product-card-mini__title">
