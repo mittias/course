@@ -6,6 +6,9 @@
       font-size: 50px;
       margin: 70px 0 50px 60px;
     }
+    @media (min-width: $screen-md) {
+      margin: 0 auto;
+    }
   }
 
   &__inner {
