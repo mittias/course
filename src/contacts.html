@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Документ</title>
+  <title>Контакты</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -33,7 +33,7 @@
           <a class="main-nav__link" href="index.html">книги</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">рекомендации</a>
+          <a class="main-nav__link" href="recommendations.html">рекомендации</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="contacts.html">контакты</a>
@@ -53,21 +53,23 @@
   <li class="about-us__item">с 9:00 до 19:00 ежедневно</li>
   <li class="about-us__item">+7 (911) 123 45 67</li>
 </ul>
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1289afb749b2b356e0446499dbd255941482784f106228229432e975524b885&amp;source=constructor" width="100%" height="347" frameborder="0"></iframe>
+<iframe class="about-us__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1289afb749b2b356e0446499dbd255941482784f106228229432e975524b885&amp;source=constructor" width="100%" height="347" frameborder="0"></iframe>
 </div>
 <form class="feedback">
   <h2 class="feedback__title">Есть вопросы?
   </h2>
   <p class="feedback__text">Напишите нам на почту. Отвечаем в течении дня</p>
-  <fieldset>
-        <input class="feedback__input" type="email" placeholder="Ваша почта">
+  <fieldset class ="feedback__form">
+        <input class="feedback__input input1" type="email"  placeholder="Ваша почта">
 
 
-        <input class="feedback__input" type="text" placeholder="Сообщение"> 
+        <input class="feedback__input input2" type="text" placeholder="Сообщение">
 
-    <label class="checkbox-inline" for="checkbox">
-      <input type="checkbox" name="checkboxes" id="checkbox">
-      1
+    <label class="checkbox" for="checkbox">
+      <input type="checkbox" name="checkboxes" id="checkbox"><span class="feedback__link">Я согласен(-на)</span>
+      <a href="#" class="feedback__link">с политикой конфиденциальности</a>
+      <span class="feedback__link">и</span>
+      <a href="#" class="feedback__link">правилами обработки данных</a>
     </label>
     <button class="btn">Отправить</button>
 
@@ -75,7 +77,9 @@
 </form>
 
 <div class="footer-promo">
-  <svg class="footer-promo__svg"></svg>
+  <svg class="footer-promo__svg" height="50"  width="100">
+      <use xlink:href="img/sprite.svg#footer-promo"></use>
+  </svg>
   <h2 class="footer-promo__title">Мы открыли для вас уютную библиотеку</h2>
   <p class="footer-promo__text">Приходите к нам по адресу Никитская 10, каждый день с 12:00 до 18:00</p>
 </div>
@@ -103,7 +107,7 @@
     </div>
   </footer>
   <script src="js/script.js" type="module">
-  </script> 
+  </script>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js">
   </script>
   <link href="../" rel="stylesheet">

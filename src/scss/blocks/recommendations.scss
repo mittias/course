@@ -1,0 +1,217 @@
+.recommendations {
+  &__title {
+    font-size: 35px;
+    margin: 30px 10px ;
+    @media (min-width: $screen-sm) {
+      font-size: 50px;
+      margin: 70px 0 50px 60px;
+    }
+  }
+
+  &__inner {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: grid;
+    max-width: 300px;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "recommendations__new-article"
+      "recommendations__book-of-autumn"
+      "recommendations__our-selections"
+      "recommendations__vote"
+      "recommendations__for-kids"
+      "recommendations__exchange";
+    @media (min-width: $screen-sm) {
+      margin: 0 auto 130px auto;
+      max-width: 760px;
+      max-height: 720px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      grid-template-areas:
+      "recommendations__new-article     recommendations__book-of-autumn  recommendations__book-of-autumn"
+      "recommendations__our-selections  recommendations__book-of-autumn  recommendations__book-of-autumn"
+      "recommendations__our-selections  recommendations__vote            recommendations__for-kids"
+      "recommendations__exchange        recommendations__exchange        recommendations__exchange";
+    }
+    @media (min-width: $screen-md) {
+      max-width: 1120px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+         "recommendations__new-article     recommendations__book-of-autumn  recommendations__book-of-autumn  recommendations__gift"
+      "recommendations__our-selections     recommendations__book-of-autumn  recommendations__book-of-autumn  recommendations__gift"
+      "recommendations__our-selections     recommendations__vote            recommendations__for-kids        recommendations__gift"
+      "recommendations__exchange           recommendations__exchange        recommendations__exchange        recommendations__gift";
+  }
+
+
+  }
+  &__new-article {
+    grid-area: recommendations__new-article;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 3%;
+    padding-left: 25px;
+
+  }
+
+  &__new-articled-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__new-article-text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__new-article-link {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  &__book-of-autumn {
+    grid-area: recommendations__book-of-autumn;
+    background: url("../img/book-of-autumn.png");
+    text-align: center;
+  }
+
+  &__book-of-autumn-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__book-of-autumn-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  &__our-selections {
+    grid-area: recommendations__our-selections;
+    background: url("../img/selections.png");
+    text-align: center;
+    border-radius: 3%;
+  }
+
+  &__our-selections-text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  &__vote {
+    grid-area: recommendations__vote;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 3%;
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  &__vote-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__vote-text {
+    font-size: 16px;
+    text-align: left;
+  }
+  &__vote .btn {
+    width: 250px;
+  }
+
+  &__for-kids {
+    grid-area: recommendations__for-kids;
+    background: #ce6194;
+    padding-left: 20px;
+    border-radius: 3%;
+  }
+
+  &__for-kids-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__for-kids-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  &__exchange {
+    grid-area: recommendations__exchange;
+    background: url("../img/old-books.png");
+    text-align: center;
+    border-radius: 3%;
+  }
+
+  &__exchange-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__exchange-text {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__gift {
+    display: none;
+    grid-area: recommendations__gift;
+      @media (min-width: $screen-md) {
+        display: block;
+      }
+
+
+
+  }
+
+  &__gift-about {
+
+  }
+
+  &__gift-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__gift-text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__book{
+    text-align: center;
+  }
+
+  &__book-img {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__book-title a {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__book-descr {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

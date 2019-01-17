@@ -1,0 +1,95 @@
+.book {
+  padding: 0 30px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "book__author-title"
+    "book__img"
+    "book__info"
+    "book__descr";
+
+  @media (min-width: $screen-sm) {
+    max-width: 760px;
+    grid-template-columns: 3fr 5fr;
+    grid-column-gap: 40px;
+    grid-template-areas:
+      "book__img  book__author-title"
+      "book__img  book__info"
+      "book__pages   book__info"
+      ".             book__info"
+      "book__descr   book__descr";
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: 1160px;
+    grid-template-columns: 2fr 4fr 6fr;
+    grid-column-gap: 40px;
+    grid-template-areas:
+      "book__pages  book__img  book__author-title"
+      "book__pages  book__img  book__info"
+      ".            book__descr   book__descr";
+  }
+
+  &__author-title {
+    grid-area: book__author-title;
+  }
+
+  &__author {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__title {
+    font-size: 36px;
+  }
+
+  &__slogan {
+    font-size: 16px;
+  }
+
+  &__img {
+    grid-area: book__img;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  &__pages {
+    display: none;
+    grid-area: book__pages;
+
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__info {
+    padding-top: 35px;
+    grid-area: book__info;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  &__info-list {
+    width: 49%;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0px;
+  }
+   &__info-list li {
+    padding-bottom: 30px;
+   }
+  &__info-list-left {
+    color: #ababab;
+  }
+  &__price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__descr {
+    grid-area: book__descr;
+  }
+
+
+}
