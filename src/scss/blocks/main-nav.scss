@@ -10,13 +10,18 @@
     flex-wrap: nowrap;
     align-items: baseline;
   }
+  &__svg {}
   &__basket {
+    padding-right: 20px;
     @media (min-width: $screen-sm) {
       order: 2;
     }
   }
   &__toggle {
+    padding: 0;
+    border: 0;
     margin: 0 20px 0 0;
+    background: #fff;
     @media (min-width: $screen-sm) {
       display: none;
     }
@@ -36,7 +41,7 @@
     padding: 20px 0 0 50px;
     background-color: rgba(220, 191, 206, 0.9);
     position: absolute;
-    z-index: 2;
+    z-index: 3;
   }
   &__item {
     padding-bottom: 20px;
@@ -49,6 +54,15 @@
     text-decoration: none;
     font-size: 14px;
     color: #000;
+  }
+  &__menu-close-svg {
+    display: none;
+  }
+  &__menu-showed-svg {
+    display: block;
+  }
+  &__menu-closed-svg {
+    display: none;
   }
 }
 .main-nav__list .call-mobile {
@@ -66,4 +80,5 @@
     order: 3;
     display: block;
   }
+
 }

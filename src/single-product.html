@@ -27,22 +27,25 @@
         <p class="page-header__text">с 9:00 до 19:00</p>
       </div>
       <nav class="main-nav">
-        <a class="main-nav__basket" href="#">b</a> <button class="main-nav__toggle"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">книги</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="recommendations.html">рекомендации</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="contacts.html">контакты</a>
-          </li>
-          <li class="main-nav__item call-mobile">
-            <a class="main-nav__link" href="tel:88005553535">картиночка 88005553535</a>
-          </li>
-        </ul><a class="main-nav__link call" href="tel:88005553535">с</a>
-      </nav>
+      <a class="main-nav__basket" href="#"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_cart"></use></svg></a> <button class="main-nav__toggle"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">книги</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="recommendations.html">рекомендации</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="contacts.html">контакты</a>
+        </li>
+        <li class="main-nav__item call-mobile">
+          <a class="main-nav__link" href="tel:88005553535"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_call"></use></svg> 88005553535</a>
+        </li>
+      </ul><a class="main-nav__link call" href="tel:88005553535"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_call"></use></svg></a>
+    </nav>
     </div>
   </header>
   <article class="book">
@@ -73,42 +76,66 @@
       <form class="book__cart">
         <button class="btn" type="submit">Добавить в корзину</button> <input class="book__quantity" id="book__quantity" max="99" min="1" name="quantity" step="1" type="number" value="1"> <label for="book__quantity">шт.</label>
       </form>
+      <div class="book_liked">
+
+        <p class="book__liked-text"><svg class="book__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#like"></use></svg> 20 людям понравилась эта книга</p>
       </div>
+
+    </div>
       <div class="book__descr">
       <h2 class="book__descr-title">Короткое описание</h2>
       <div class="book__descr-text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eius, nemo reiciendis quis dicta provident magni atque perspiciatis nobis magnam ab saepe non eum tenetur, recusandae sapiente! Corporis consectetur cupiditate, optio vel soluta, iusto possimus est tempore maxime sit. Recusandae tempore aspernatur amet nobis similique debitis vel perferendis, est consectetur.
       </div>
+      <div class="book_descr-svges">
+        <svg class="book__descr-svg" height="25" width="25">
+          <use xlink:href="img/sprite.svg#icon_facebook"></use>
+        </svg>
+        <span class="book__descr-liked">15</span>
+        <svg class="book__descr-svg" height="25" width="25">
+          <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+        </svg>
+        <span class="book__descr-liked">4</span>
+        <svg class="book__descr-svg" height="25" width="25">
+          <use xlink:href="img/sprite.svg#icon_thumbs_up"></use>
+        </svg>
+        <span class="book__descr-liked">150</span>
+        <svg class="book__descr-svg" height="25" width="25">
+          <use xlink:href="img/sprite.svg#icon_thumbs_down"></use>
+        </svg>
+        <span class="book__descr-liked">0</span>
+      </div>
       </div>
 
   </article>
-  <div class="catalog-new">
-    <div class="catalog-new__inner">
-      <h2 class="catalog-new__title">Наши новинки</h2><a class="catalog-new__all" href="">Все новинки</a>
-      <div class="catalog-new__list">
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/book-lateralnaya-logika.jpg"></a>
-                  <h2 class="product-card-mini__title"><a href="">Латеральная логика</a></h2>
-                  <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
-                </article>
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/putevoditel-po-lzhi.png"></a>
-                  <h2 class="product-card-mini__title"><a href="">Путеводитель по лжи</a></h2>
-                  <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
-                </article>
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/dao-fiziki.png"></a>
-                  <h2 class="product-card-mini__title"><a href="">Дао физики</a></h2>
-                  <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
-                </article>
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/book-ne-ochevidno.jpg"></a>
-                  <h2 class="product-card-mini__title"><a href="">Не очевидно</a></h2>
-                  <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
-                </article>
-              </div>
-    </div>
-  </div>
+          <div class="catalog-new">
+          <div class="catalog-new__inner">
+            <h2 class="catalog-new__title">Наши новинки</h2><a class="catalog-new__all" href="single-product.html">Все новинки</a>
+            <div class="catalog-new__list">
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/book-lateralnaya-logika.jpg"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Латеральная логика</a></h2>
+                <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
+              </article>
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/books_all/putevoditel-po-lzhi.png"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Путеводитель по лжи</a></h2>
+                <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
+              </article>
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/books_all/dao-fiziki.png"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Дао физики</a></h2>
+                <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
+              </article>
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/book-ne-ochevidno.jpg"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Не очевидно</a></h2>
+                <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
+              </article>
+            </div>
+          </div>
+        </div>
   <div class="footer-promo">
   <svg class="footer-promo__svg" height="50"  width="100">
       <use xlink:href="img/sprite.svg#footer-promo"></use>

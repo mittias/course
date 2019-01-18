@@ -49,3 +49,15 @@ body {
   border: 0;
   border-radius: 2%
 }
+.btn:hover {
+  background: #d7569c;
+}
+.btn:focus {
+  background: #d72384;
+}
+a:hover {
+  color: #6c73ff;
+}
+a:focus {
+  color: #2326b5;
+}

@@ -14,7 +14,7 @@
     padding: 0;
     overflow-y: scroll;
     @media (min-width: $screen-sm) {
-      width: 80%;
+      width: 86%;
       margin: 0 auto;
       align-content: baseline;
       justify-content: center;
@@ -41,6 +41,11 @@
     font-size: 16px;
     text-decoration: none;
     color: #000;
+    &:hover {
+      color: #1a1ff7;
+    }
+    &:focus {
+      color: #1a1ff7;  }
   }
   &__list {
     padding: 40px 50px 50px;

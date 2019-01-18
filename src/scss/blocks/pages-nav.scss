@@ -24,6 +24,14 @@
     font-size: 16px;
     text-decoration: none;
     color: #000;
-    padding-right: 20px;
+    padding: 0 8px;
+    border-radius: 60%;
+    &:hover {
+      background: #f4d4e4;
+    }
+    &:focus {
+      background: #f4d4e4;
+      color: #f075b1;
+    }
   }
 }

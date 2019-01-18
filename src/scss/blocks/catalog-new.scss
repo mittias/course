@@ -44,7 +44,20 @@
   }
   & .product-card-mini__img {
     @media (min-width: $screen-sm) {
-      width: 260px;
+      width: 230px;
+      padding-right: 20px;
+    }
+  }
+  & .product-card-mini__title {
+    @media (min-width: $screen-sm) {
+      width: 230px;
+      padding-right: 20px;
+    }
+  }
+  & .product-card-mini__descr {
+    @media (min-width: $screen-sm) {
+      width: 230px;
+      padding-right: 20px;
     }
   }
 }

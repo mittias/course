@@ -8,7 +8,7 @@
     }
     @media (min-width: $screen-md) {
       margin: 0 auto;
-      margin: 70px 0 50px 100px;
+      margin: 70px 0 50px 200px;
     }
   }
 
@@ -101,6 +101,7 @@
     background: url("../img/selections.png");
     text-align: center;
     border-radius: 3%;
+    vertical-align: center;
   }
 
   &__our-selections-text {
@@ -108,6 +109,9 @@
     font-weight: bold;
     line-height: 30px;
     color: #fff;
+    @media (min-width: $screen-sm) {
+      margin-top: 125px;
+    }
   }
 
   &__vote {
@@ -173,6 +177,7 @@
   &__gift {
     display: none;
     grid-area: recommendations__gift;
+    padding-left: 20px;
       @media (min-width: $screen-md) {
         display: block;
       }
@@ -204,6 +209,10 @@
     margin: 0 auto;
   }
 
+  &__book-title {
+    text-align: left;
+  }
+
   &__book-title a {
     font-size: 24px;
     line-height: 30px;
@@ -217,5 +226,6 @@
     font-style: italic;
     font-size: 16px;
     line-height: 24px;
+    text-align: left;
   }
 }

@@ -1,6 +1,14 @@
 import insertElements from './modules/insertElements.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 
+$('.main-nav__toggle').on('click', function(e) {
+  $('.main-nav__list').toggleClass("main-nav__listOpen");
+  e.preventDefault();
+  $('.main-nav__menu-show-svg').toggleClass("main-nav__menu-closed-svg");
+  $('.main-nav__menu-close-svg').toggleClass("main-nav__menu-showed-svg");
+  console.log("rere")
+});
+
 const data = {
   page: 1,
   perPage: 8,
@@ -59,10 +67,7 @@ function sendRequest(data) {
   };
 };
 };
-$('.main-nav__toggle').on('click', function(e) {
-  $('.main-nav__list').toggleClass("main-nav__listOpen");
-  e.preventDefault();
-});
+
 
 jQuery(document).ready(function ($) {
 

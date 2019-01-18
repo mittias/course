@@ -28,7 +28,11 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3
       <p class="page-header__text">с 9:00 до 19:00</p>
     </div>
     <nav class="main-nav">
-      <a class="main-nav__basket" href="#">b</a> <button class="main-nav__toggle"></button>
+      <a class="main-nav__basket" href="#"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_cart"></use></svg></a>
+          <button class="main-nav__toggle"><svg class="main-nav__menu-show-svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#menu"></use></svg><svg class="main-nav__menu-close-svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#menu_close"></use></svg></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">книги</a>
@@ -40,185 +44,271 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3
           <a class="main-nav__link" href="contacts.html">контакты</a>
         </li>
         <li class="main-nav__item call-mobile">
-          <a class="main-nav__link" href="tel:88005553535">картиночка 88005553535</a>
+          <a class="main-nav__link" href="tel:88005553535"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_call_mobile"></use></svg> 88005553535</a>
         </li>
-      </ul><a class="main-nav__link call" href="tel:88005553535">с</a>
+      </ul><a class="main-nav__link call" href="tel:88005553535"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_call"></use></svg></a>
     </nav>
   </div>
 </header>
 <div class="promo">
   <div class="slider" id="slider">
-    <a href="#" class="slider__control control-next"><svg class="slider__svg" height="25" width="25">
-      <use xlink:href="img/sprite.svg#arrow-right"></use></svg></a>
-      <a href="#" class="slider__control control-prev"><svg class="slider__svg" height="25" width="25">
-        <use xlink:href="img/sprite.svg#arrow-left"></use></svg></a>
-        <ul class="slider__list">
-          <li class="slider__item">
-            <div class="slider__inner">
-              <p class="slider__item-descr">Новое поступление книги «Симпсоны и их математические секреты» </p>
-              <h2 class="slider__item-title">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика. </h2>
-              <a href="single-product.html" class="slider__link">Хочу узнать о книге больше</a>
-            </div>
-              <div class="slider__border"></div>
-            <a href=""><img alt="" width="300px" class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg"></a>
-          </li>
-          <li class="slider__item">
-            <div class="slider__inner">
-              <p class="slider__item-descr">Новое поступление книги «45 татуировок менеджера» </p>
-              <h2 class="slider__item-title">Книга про правила российского руководителя </h2>
-              <a href="#" class="slider__link">Хочу узнать о книге больше</a>
-            </div>
-              <div class="slider__border"></div>
-            <a href=""><img alt="" width="300px" class="slider__item-img" src="img/books_all/45-tatuirovok-prodavana.png"></a>
-          </li>
-          <li class="slider__item">
-            <div class="slider__inner">
-              <p class="slider__item-descr">Узнайте как обучать персонал с новой книгой «Пятая дисциплина»</p>
-              <h2 class="slider__item-title">Искусство и практика обучающейся организации</h2>
-              <a href="#" class="slider__link">Хочу узнать о книге больше</a>
-            </div>
-              <div class="slider__border"></div>
-            <a href=""><img alt="" width="300px" class="slider__item-img" src="img/books_all/pyataya-distsiplina.png"></a>
-          </li>
-        </ul>
-      </div>
-
+    <a href="#" class="slider__control control-next">
+      <svg class="slider__svg" height="25" width="25">
+        <use xlink:href="img/sprite.svg#arrow-right">
+        </use>
+      </svg>
+    </a>
+    <a href="#" class="slider__control control-prev"><svg class="slider__svg" height="25" width="25">
+    <use xlink:href="img/sprite.svg#arrow-left"></use></svg></a>
+    <ul class="slider__list">
+      <li class="slider__item">
+        <div class="slider__inner">
+          <p class="slider__item-descr">Новое поступление книги «Симпсоны и их математические секреты» </p>
+          <h2 class="slider__item-title">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика. </h2>
+          <a href="single-product.html" class="slider__link">Хочу узнать о книге больше</a>
+        </div>
+          <div class="slider__border"></div>
+        <a href="single-product.html"><img alt="" width="300px" class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg"></a>
+      </li>
+      <li class="slider__item">
+        <div class="slider__inner">
+          <p class="slider__item-descr">Новое поступление книги «45 татуировок менеджера» </p>
+          <h2 class="slider__item-title">Книга про правила российского руководителя </h2>
+          <a href="single-product.html" class="slider__link">Хочу узнать о книге больше</a>
+        </div>
+          <div class="slider__border"></div>
+        <a href="single-product.html"><img alt="" width="300px" class="slider__item-img" src="img/books_all/45-tatuirovok-prodavana.png"></a>
+      </li>
+      <li class="slider__item">
+        <div class="slider__inner">
+          <p class="slider__item-descr">Узнайте как обучать персонал с новой книгой «Пятая дисциплина»</p>
+          <h2 class="slider__item-title">Искусство и практика обучающейся организации</h2>
+          <a href="single-product.html" class="slider__link">Хочу узнать о книге больше</a>
+        </div>
+          <div class="slider__border"></div>
+        <a href=""><img alt="" width="300px" class="slider__item-img" src="img/books_all/pyataya-distsiplina.png"></a>
+      </li>
+    </ul>
   </div>
-  <section class="catalog">
-    <div class="catalog__tabs-wrap">
-      <ul class="catalog__tabs j-tabs">
-        <li class="catalog__tab-item">
-          <a class="catalog__tab-link" data-type="" href="#" id="qwerty">Все</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a class="catalog__tab-link" data-type="marketing" href="#">Маркетинг</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a class="catalog__tab-link" data-type="science" href="#">Научпоп</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a class="catalog__tab-link" data-type="business" href="#">Бизнес</a>
-        </li>
-        <li class="catalog__tab-item">
-          <a class="catalog__tab-link" data-type="creativity" href="#">Творчество</a>
-        </li>
-      </ul>
-    </div>
-    <div class="catalog__list-wrap">
-      <div class="catalog__list">
+
+</div>
+
+<section class="catalog">
+  <div class="catalog__tabs-wrap">
+    <ul class="catalog__tabs j-tabs">
+      <li class="catalog__tab-item">
+        <a class="catalog__tab-link" data-type="" href="#" id="qwerty">Все</a>
+      </li>
+      <li class="catalog__tab-item">
+        <a class="catalog__tab-link" data-type="marketing" href="#">Маркетинг</a>
+      </li>
+      <li class="catalog__tab-item">
+        <a class="catalog__tab-link" data-type="science" href="#">Научпоп</a>
+      </li>
+      <li class="catalog__tab-item">
+        <a class="catalog__tab-link" data-type="business" href="#">Бизнес</a>
+      </li>
+      <li class="catalog__tab-item">
+        <a class="catalog__tab-link" data-type="creativity" href="#">Творчество</a>
+      </li>
+    </ul>
+  </div>
+  <div class="catalog__list-wrap">
+    <div class="catalog__list">
+      <article class="product-card-mini">
+        <a href="single-product.html" class="product-card-mini__img-wrap">
+          <img src="img/books_all/klienty-na-vsyu-zhizn.png" alt="" class="product-card-mini__img">
+        </a>
+        <h2 class="product-card-mini__title">
+         <a href="">Клиенты на всю жизнь</a>
+        </h2>
+        <p class="product-card-mini__descr"></p>
+        <div class="product-card-mini__price">697 ₽</div>
+      </article>
+      <article class="product-card-mini">
+        <a href="single-product.html" class="product-card-mini__img-wrap">
+          <img src="img/books_all/tsennye-resheniya.png" alt="" class="product-card-mini__img">
+        </a>
+            <h2 class="product-card-mini__title">
+             <a href="">Ценные решения</a>
+            </h2>
+            <p class="product-card-mini__descr">Как работать с ценами, чтобы прибыль росла</p>
+            <div class="product-card-mini__price">637 ₽</div>
+          </article><article class="product-card-mini">
+
+            <a href="single-product.html" class="product-card-mini__img-wrap">
+              <img src="img/books_all/45-tatuirovok-prodavana.png" alt="" class="product-card-mini__img">
+            </a>
+            <h2 class="product-card-mini__title">
+             <a href="">45 татуировок продавана</a>
+            </h2>
+            <p class="product-card-mini__descr">Правила для тех, кто продаёт и управляет продажами</p>
+            <div class="product-card-mini__price">676 ₽</div>
+          </article><article class="product-card-mini">
+
+            <a href="single-product.html" class="product-card-mini__img-wrap">
+              <img src="img/books_all/dnevnik-khudozhnika-naturalista.png" alt="" class="product-card-mini__img">
+            </a>
+            <h2 class="product-card-mini__title">
+             <a href="">Дневник художника-натуралиста</a>
+            </h2>
+            <p class="product-card-mini__descr">Как рисовать животных, птиц, растения и пейзажи</p>
+            <div class="product-card-mini__price">1695 ₽</div>
+          </article><article class="product-card-mini">
+
+            <a href="single-product.html" class="product-card-mini__img-wrap">
+              <img src="img/books_all/otkrytoe-myshlenie.png" alt="" class="product-card-mini__img">
+            </a>
+            <h2 class="product-card-mini__title">
+             <a href="">Открытое мышление</a>
+            </h2>
+            <p class="product-card-mini__descr">Как выйти за пределы своей точки зрения</p>
+            <div class="product-card-mini__price">625 ₽</div>
+          </article><article class="product-card-mini">
+
+            <a href="single-product.html" class="product-card-mini__img-wrap">
+              <img src="img/books_all/ne-delay-eto.png" alt="" class="product-card-mini__img">
+            </a>
+            <h2 class="product-card-mini__title">
+             <a href="">Не делай это</a>
+            </h2>
+            <p class="product-card-mini__descr">Тайм-менеджмент для творческих людей</p>
+            <div class="product-card-mini__price">855 ₽</div>
+          </article><article class="product-card-mini">
+
+            <a href="single-product.html" class="product-card-mini__img-wrap">
+              <img src="img/books_all/ya-khochu-bolshe-idey.png" alt="" class="product-card-mini__img">
+            </a>
+            <h2 class="product-card-mini__title">
+             <a href="">Я хочу больше идей!</a>
+            </h2>
+            <p class="product-card-mini__descr">Более 100 техник и упражнений для развития творческого мышления</p>
+            <div class="product-card-mini__price">667 ₽</div>
+          </article><article class="product-card-mini">
+
+            <a href="single-product.html" class="product-card-mini__img-wrap">
+              <img src="img/books_all/urban-jungle.png" alt="" class="product-card-mini__img">
+            </a>
+            <h2 class="product-card-mini__title">
+             <a href="">Urban Jungle</a>
+            </h2>
+            <p class="product-card-mini__descr">Как создать уютный интерьер с помощью растений</p>
+            <div class="product-card-mini__price">807 ₽</div>
+          </article></div>
+  </div>
+  <nav class="pages-nav">
+    <ul class="pages-nav__list">
+      <li class="pages-nav__list-item">
+        <a href="">1</a>
+      </li>
+      <li class="pages-nav__list-item">
+        <a href="">2</a>
+      </li>
+      <li class="pages-nav__list-item">
+        <a href="">3</a>
+      </li>
+      <li class="pages-nav__list-item">
+        <a href="">4</a>
+      </li>
+      <li class="pages-nav__list-item">
+        <a href="">5</a>
+      </li>
+      <li class="pages-nav__list-item">
+        <a href="">...</a>
+      </li>
+      <li class="pages-nav__list-item">
+        <a href="">10</a>
+      </li>
+    </ul>
+  </nav>
+</section>
+<div class="delivery-info">
+  <h2 class="delivery-info__title">Доставим в любое место</h2>
+  <p class="delivery-info__text">// ну почти любое</p>
+  <div class="delivery-info__inner">
+    <div class="delivery-info__item">
+      <svg class="delivery-info__svg" height="48" width="48">
+        <use xlink:href="img/sprite.svg#icon_book"></use></svg>
+        <p class="delivery-info__descr">Покупаете книги на сайте в<br>
+        любом формате - бумажные, электронные или аудио.</p>
       </div>
-    </div>
-    <nav class="pages-nav">
-      <ul class="pages-nav__list">
-        <li class="pages-nav__list-item">
-          <a href="">1</a>
-        </li>
-        <li class="pages-nav__list-item">
-          <a href="">2</a>
-        </li>
-        <li class="pages-nav__list-item">
-          <a href="">3</a>
-        </li>
-        <li class="pages-nav__list-item">
-          <a href="">4</a>
-        </li>
-        <li class="pages-nav__list-item">
-          <a href="">5</a>
-        </li>
-        <li class="pages-nav__list-item">
-          <a href="">...</a>
-        </li>
-        <li class="pages-nav__list-item">
-          <a href="">10</a>
-        </li>
-      </ul>
-    </nav>
-  </section>
-  <div class="delivery-info">
-    <h2 class="delivery-info__title">Доставим в любое место</h2>
-    <p class="delivery-info__text">// ну почти любое</p>
-    <div class="delivery-info__inner">
       <div class="delivery-info__item">
         <svg class="delivery-info__svg" height="48" width="48">
-          <use xlink:href="img/sprite.svg#icon_book"></use></svg>
-          <p class="delivery-info__descr">Покупаете книги на сайте в<br>
-          любом формате - бумажные, электронные или аудио.</p>
+          <use xlink:href="img/sprite.svg#icon_delivery"></use></svg>
+          <p class="delivery-info__descr">Мы подарим вам «Набор<br>
+          читателя» и добавим в посылку.</p>
         </div>
         <div class="delivery-info__item">
           <svg class="delivery-info__svg" height="48" width="48">
-            <use xlink:href="img/sprite.svg#icon_delivery"></use></svg>
-            <p class="delivery-info__descr">Мы подарим вам «Набор<br>
-            читателя» и добавим в посылку.</p>
+            <use xlink:href="img/sprite.svg#icon_box"></use></svg>
+            <p class="delivery-info__descr">Бесплатно доставляем заказы от<br>
+            3 000 по всей России.</p>
           </div>
           <div class="delivery-info__item">
             <svg class="delivery-info__svg" height="48" width="48">
-              <use xlink:href="img/sprite.svg#icon_box"></use></svg>
-              <p class="delivery-info__descr">Бесплатно доставляем заказы от<br>
-              3 000 по всей России.</p>
-            </div>
-            <div class="delivery-info__item">
-              <svg class="delivery-info__svg" height="48" width="48">
-                <use xlink:href="img/sprite.svg#icon_map"></use></svg>
-                <p class="delivery-info__descr">Доставка в более чем 300 городов России, по Москве и<br>
-                Санкт-Петербургу - бесплатно.</p>
-              </div>
+              <use xlink:href="img/sprite.svg#icon_map"></use></svg>
+              <p class="delivery-info__descr">Доставка в более чем 300 городов России, по Москве и<br>
+              Санкт-Петербургу - бесплатно.</p>
             </div>
           </div>
-          <div class="catalog-new">
-            <div class="catalog-new__inner">
-              <h2 class="catalog-new__title">Наши новинки</h2><a class="catalog-new__all" href="">Все новинки</a>
-              <div class="catalog-new__list">
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/book-lateralnaya-logika.jpg"></a>
-                  <h2 class="product-card-mini__title"><a href="">Латеральная логика</a></h2>
-                  <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
-                </article>
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/putevoditel-po-lzhi.png"></a>
-                  <h2 class="product-card-mini__title"><a href="">Путеводитель по лжи</a></h2>
-                  <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
-                </article>
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/books_all/dao-fiziki.png"></a>
-                  <h2 class="product-card-mini__title"><a href="">Дао физики</a></h2>
-                  <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
-                </article>
-                <article class="product-card-mini">
-                  <a class="product-card-mini__img-wrap" href=""><img alt="" class="product-card-mini__img" src="/img/book-ne-ochevidno.jpg"></a>
-                  <h2 class="product-card-mini__title"><a href="">Не очевидно</a></h2>
-                  <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
-                </article>
-              </div>
+        </div>
+        <div class="catalog-new">
+          <div class="catalog-new__inner">
+            <h2 class="catalog-new__title">Наши новинки</h2><a class="catalog-new__all" href="single-product.html">Все новинки</a>
+            <div class="catalog-new__list">
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/book-lateralnaya-logika.jpg"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Латеральная логика</a></h2>
+                <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
+              </article>
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/books_all/putevoditel-po-lzhi.png"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Путеводитель по лжи</a></h2>
+                <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
+              </article>
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/books_all/dao-fiziki.png"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Дао физики</a></h2>
+                <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
+              </article>
+              <article class="product-card-mini">
+                <a class="product-card-mini__img-wrap" href="single-product.html"><img alt="" class="product-card-mini__img" src="/img/book-ne-ochevidno.jpg"></a>
+                <h2 class="product-card-mini__title"><a href="single-product.html">Не очевидно</a></h2>
+                <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
+              </article>
             </div>
           </div>
-          <footer class="page-footer">
-            <div class="page-footer__inner">
-              <div class="page-footer__item">
-                <div class="page-footer__wrapper">
-                  <a class="logo" href="#">book store</a>
-                  <p class="page-footer__text">с 9:00 до 19:00</p>
-                </div>
-                <nav class="foot-nav">
-                  <ul class="foot-nav__list">
-                    <li class="foot-nav__item">
-                      <a class="foot-nav__link" href="">книги</a>
-                    </li>
-                    <li class="foot-nav__item">
-                      <a class="foot-nav__link" href="">рекомендации</a>
-                    </li>
-                    <li class="foot-nav__item show">
-                      <a class="foot-nav__link" href="">контакты</a>
-                    </li>
-                  </ul>
-                </nav>
+        </div>
+        <footer class="page-footer">
+          <div class="page-footer__inner">
+            <div class="page-footer__item">
+              <div class="page-footer__wrapper">
+                <a class="logo" href="#">book store</a>
+                <p class="page-footer__text">с 9:00 до 19:00</p>
               </div>
+              <nav class="foot-nav">
+                <ul class="foot-nav__list">
+                  <li class="foot-nav__item">
+                    <a class="foot-nav__link" href="">книги</a>
+                  </li>
+                  <li class="foot-nav__item">
+                    <a class="foot-nav__link" href="">рекомендации</a>
+                  </li>
+                  <li class="foot-nav__item show">
+                    <a class="foot-nav__link" href="">контакты</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-          </footer>
-          <script src="js/script.js" type="module">
-          </script>
-          <script src="http://code.jquery.com/jquery-3.3.1.min.js">
-          </script>
-          <link href="../" rel="stylesheet">
+          </div>
+        </footer>
+        <script src="js/script.js" type="module">
+        </script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <link href="../" rel="stylesheet">
 
-        </body>
-        </html>
+      </body>
+      </html>

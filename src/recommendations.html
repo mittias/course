@@ -3,48 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Контакты</title>
+  <title>Документ</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script>
-     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
   <script src="js/svg4everybody.min.js">
   </script>
   <script>
-     svg4everybody()
+    svg4everybody()
   </script>
 </head>
 <body>
-  <script id="__bs_script__">
-   //<![CDATA[
-   document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
-   //]]>
-  </script>
-  <header class="page-header">
-    <div class="page-header__inner">
-      <div class="page-header__wrapper">
-        <a class="logo" href="#">book store</a>
-        <p class="page-header__text">с 9:00 до 19:00</p>
-      </div>
-      <nav class="main-nav">
-        <a class="main-nav__basket" href="#">b</a> <button class="main-nav__toggle"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">книги</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="recommendations.html">рекомендации</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="contacts.html">контакты</a>
-          </li>
-          <li class="main-nav__item call-mobile">
-            <a class="main-nav__link" href="tel:88005553535">картиночка 88005553535</a>
-          </li>
-        </ul><a class="main-nav__link call" href="tel:88005553535">с</a>
-      </nav>
+  <!-- Посмотреть че не так -->
+<!--   <script id="__bs_script__">
+//<![CDATA[
+document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+//]]>
+</script> -->
+<header class="page-header">
+  <div class="page-header__inner">
+    <div class="page-header__wrapper">
+      <a class="logo" href="#">book store</a>
+      <p class="page-header__text">с 9:00 до 19:00</p>
     </div>
-  </header>
+    <nav class="main-nav">
+      <a class="main-nav__basket" href="#"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_cart"></use></svg></a>
+          <button class="main-nav__toggle"><svg class="main-nav__menu-show-svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#menu"></use></svg><svg class="main-nav__menu-close-svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#menu_close"></use></svg></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">книги</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="recommendations.html">рекомендации</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="contacts.html">контакты</a>
+        </li>
+        <li class="main-nav__item call-mobile">
+          <a class="main-nav__link" href="tel:88005553535"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_call_mobile"></use></svg> 88005553535</a>
+        </li>
+      </ul><a class="main-nav__link call" href="tel:88005553535"><svg class="main-nav__svg" height="15" width="15">
+          <use xlink:href="img/sprite.svg#icon_call"></use></svg></a>
+    </nav>
+  </div>
+</header>
 
   <div class="recommendations">
     <h2 class="recommendations__title">Наши рекомендации</h2>
@@ -79,8 +86,8 @@
           <p class="recommendations__gift-text">При вашем новом заказе мы подарим вам книгу</p>
         </div>
         <div class="recommendations__book">
-          <a class="recommendations__img-wrap" href=""><img alt="" class="recommendations__book-img" src="/img/books_all/putevoditel-po-lzhi.png"></a>
-          <h2 class="recommendations__book-title"><a href="">Путеводитель по лжи</a></h2>
+          <a class="recommendations__img-wrap" href="single-product.html"><img alt="" class="recommendations__book-img" src="/img/books_all/putevoditel-po-lzhi.png"></a>
+          <h2 class="recommendations__book-title"><a href="single-product.html">Путеводитель по лжи</a></h2>
           <p class="recommendations__book-descr">Критическое мышление в эпоху постправды</p>
         </div>
       </div>
